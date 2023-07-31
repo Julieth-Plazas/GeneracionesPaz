@@ -1,5 +1,9 @@
 # Generaciones de Paz
 
+## Comenzando 🚀
+
+Si se quiere ejecutar de forma local, la api se ejecutara en el http://localhost:4000 y el aplicativo de react en el puerto http://localhost:3000
+
 ### Pre-requisitos 📋
 
 Utilizando el stack MERN, se debe contar con MongoDB, Express, React Js y Node Js.
