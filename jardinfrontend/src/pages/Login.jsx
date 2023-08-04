@@ -14,7 +14,7 @@ const Login = () => {
         <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
           <div className="card-body">
             <div className="form-control">
-              <h1 className="text-5xl font-bold p-5 text-center">Bienvenido</h1>
+              <h1 className="text-5xl font-bold p-5 text-center">Bienvenidos</h1>
               <label className="label">
                 <span className="label-text">Correo electronico</span>
               </label>
