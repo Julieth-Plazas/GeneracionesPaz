@@ -1,6 +1,6 @@
 # Generaciones de Paz
 
-## Comenzando 🚀
+## Comenzando 🚀dd
 
 Si se quiere ejecutar de forma local, la api se ejecutara en el http://localhost:4000 y el aplicativo de react en el puerto http://localhost:3000
 
