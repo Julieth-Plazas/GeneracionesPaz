@@ -22,7 +22,7 @@ const Home = () => {
                 curiosidad y habilidades sociales.
               </p>
               <Link to="/conocenos" className="btn btn-primary">
-                Conocenos
+                Conocenoss
               </Link>
             </div>
           </div>
