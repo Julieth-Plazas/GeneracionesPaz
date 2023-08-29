@@ -13,7 +13,7 @@ const Home = () => {
             </div>
             <div className="p-10">
               <h1 className="text-5xl font-bold">Generaciones de Paz</h1>
-              <p className="py-6 text-justify">
+              <p className="py-6">
                 En este acogedor y encantador lugar, nos dedicamos con pasión y
                 compromiso a brindarles a los niños y niñas un ambiente
                 estimulante y seguro para que puedan crecer, aprender y

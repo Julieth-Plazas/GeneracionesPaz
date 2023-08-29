@@ -22,6 +22,7 @@ import {
   METODOLOGY,
   CONTACT,
 } from "./routes/PublicPaths";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
         <Route path={LOGIN} element={<Login />} />
         <Route path={NOTFOUND} element={<NotFound />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 }

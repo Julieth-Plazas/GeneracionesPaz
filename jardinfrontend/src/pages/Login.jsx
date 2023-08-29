@@ -16,11 +16,11 @@ const Login = () => {
             <div className="form-control">
               <h1 className="text-5xl font-bold p-5 text-center">Bienvenido</h1>
               <label className="label">
-                <span className="label-text">Correo electronico</span>
+                <span className="label-text">Correo electrónico</span>
               </label>
               <input
                 type="text"
-                placeholder="correo electronico"
+                placeholder="correo electrónico"
                 className="input input-bordered"
               />
             </div>

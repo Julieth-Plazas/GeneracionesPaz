@@ -93,8 +93,8 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <Link to="/" className="btn btn-ghost normal-case text-xl ms-3">
-          <img src={Logo} alt="logo" width={47} />
+        <Link to="/" className="btn btn-ghost normal-case text-xl ms-3 h-20 w-24">
+          <img src={Logo} alt="logo" width={52} />
         </Link>
       </div>
       <div className="navbar-center hidden z-40 lg:flex" >
@@ -160,7 +160,7 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="navbar-end">
-        <Link to="/iniciarsesion" className="btn btn-primary me-3">
+        <Link to="/iniciarsesion" className="btn btn-primary me-3 text-xs">
           Iniciar Sesión
         </Link>
       </div>
