@@ -14,15 +14,21 @@ const Home = () => {
             <div className="p-10">
               <h1 className="text-5xl font-bold">Generaciones de Paz</h1>
               <p className="py-6">
-                En este acogedor y encantador lugar, nos dedicamos con pasión y
-                compromiso a brindarles a los niños y niñas un ambiente
-                estimulante y seguro para que puedan crecer, aprender y
-                desarrollarse plenamente. Nuestra misión es proporcionarles una
-                base sólida para su futuro, fomentando su creatividad,
-                curiosidad y habilidades sociales.
+                El jardín infantil “GENERACIONES DE PAZ” fundamenta su formación
+                en principios y valores que privilegian el afecto, el respeto,
+                la tolerancia, la espiritualidad y un proceso cognitivo
+                constructivista en el entendido que el ser humano se forma y
+                construye su futuro desde su nacimiento, en la medida que los
+                ambientes donde crece sean favorables y le permitan potenciar se
+                en todas sus etapas sin forzar procesos.
+                <br /> La formación en valores desde los primeros años de vida,
+                permite en el niño y la niña el desarrollo autónomo de su
+                identidad, de esta manera a partir de la experiencia cotidiana
+                comprende que cada una de sus acciones produce circunstancias
+                asertivas o negativas que necesariamente deben ser asumidas
               </p>
               <Link to="/conocenos" className="btn btn-primary">
-                Conocenoss
+                Conocenos
               </Link>
             </div>
           </div>

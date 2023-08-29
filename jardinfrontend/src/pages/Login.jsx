@@ -4,17 +4,17 @@ const Login = () => {
   return (
     <div className="hero min-h-screen bg-base-100" data-theme="cupcake">
       <div className="hero-content flex-col lg:flex-row-reverse">
-        <div className="text-center lg:text-left">
-          <img
-            src={Garden1}
-            alt="login"
-            className="rounded-full w-64 h-64 md:w-80 md:h-72 p-10"
-          />
-        </div>
+        <img
+          src={Garden1}
+          alt="login"
+          className="rounded-full w-72 h-72 md:w-96 md:h-72 p-10"
+        />
         <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
           <div className="card-body">
             <div className="form-control">
-              <h1 className="text-5xl font-bold p-5 text-center">Bienvenidos</h1>
+              <h1 className="text-2xl lg:text-3xl font-bold p-5 text-center">
+                Bienvenidos
+              </h1>
               <label className="label">
                 <span className="label-text">Correo electrónico</span>
               </label>

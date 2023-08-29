@@ -59,7 +59,7 @@ const Contact = () => {
         <div className="hero-content flex-col lg:flex-row">
           <div className="card flex-shrink-0 w-full max-w-lg shadow-2xl bg-base-100">
             <form className="card-body grid grid-cols-4">
-              <h1 className="text-3xl lg:text-4xl font-bold col-span-4 text-center p-2">
+              <h1 className="text-2xl lg:text-3xl font-bold col-span-4 text-center p-2">
                 Enviar mensaje
               </h1>
               <div className="form-control col-span-4">
