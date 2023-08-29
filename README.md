@@ -1,6 +1,6 @@
 # Generaciones de Paz
 
-## Comenzando 🚀dd
+## Comenzando 🚀
 
 Si se quiere ejecutar de sdforma local, la api se ejecutara en el http://localhost:4000 y el aplicativo de react en el puerto http://localhost:3000
 
