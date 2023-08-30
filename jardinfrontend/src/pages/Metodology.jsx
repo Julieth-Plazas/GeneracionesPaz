@@ -12,7 +12,14 @@ const Metodology = () => {
                <li className="pb-2">10:15 - 11:00 Actividad pedagógica</li>
                <li className="pb-2">11:00 - 11:45  Actividad pedagógica</li>
               </p>
+              <li className="pb-2">12.00 - 2.00  Almuerzo y descanso</li>
+              <p className="py-6">
+               <li className="pb-2">2.00  -  2:30  Hora Literaria</li>
+               <li className="pb-2">2:30  -  3:30 Actividad pedagógica</li>
+               <li className="pb-2">3:30  -  4:00 Espacio para onces</li>
+               <li className="pb-2">4:00  -  4:30 Actividad Recreativa</li>
 
+              </p>
               </div>
   )
 }
