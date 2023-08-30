@@ -9,6 +9,12 @@ const About = () => {
               servicio de educación preescolar, desarrollando competencias generales para potenciar a los niños  en 
               forma integral.
               </p>
+              <h1 className="text-5xl font-bold">VISION</h1>
+              <p className="py-6">
+              Posicionar a esta institución educativa privada como una de las que ofrece mejor 
+              calidad en la ciudad y proyectarla a nivel nacional  con proyectos que 
+              favorezcan la atención de niños y las niñas
+              </p>
               
             </div>
             
