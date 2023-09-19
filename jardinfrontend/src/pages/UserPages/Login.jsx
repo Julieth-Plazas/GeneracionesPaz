@@ -48,7 +48,7 @@ const Login = () => {
         <img
           src={Garden1}
           alt="login"
-          className="rounded-full w-72 h-72 md:w-80 md:h-80 lg:w-96 lg:h-72 p-10"
+          className="rounded-full w-72 h-72 md:w-80 md:h-80 lg:w-96 lg:h-72 m-4"
         />
         <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
           <form
