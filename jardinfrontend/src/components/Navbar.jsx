@@ -8,9 +8,30 @@ import KnowUs from "../assets/boy.png";
 import Metodology from "../assets/puzzle.png";
 import Services from "../assets/bricks.png";
 import Spaces from "../assets/seesaw.png";
-import { Link } from 'react-router-dom'
+import Toys from "../assets/toys.png";
+import Backpack from "../assets/backpack.png";
+import { Link, useNavigate } from "react-router-dom";
+import { AdminContext } from "../context/AdminContext";
+import { TeacherContext } from "../context/TeacherContext";
+import { useContext } from "react";
 
 const Navbar = () => {
+  const { session, setSession } = useContext(TeacherContext);
+  const { adminSession, setAdminSession } = useContext(AdminContext);
+  const navigate = useNavigate();
+
+  function logoutUser() {
+    window.localStorage.removeItem("session");
+    setSession(false);
+    navigate("/");
+  }
+
+  function logoutAdmin() {
+    window.localStorage.removeItem("adminSession");
+    setAdminSession(false);
+    navigate("/");
+  }
+
   return (
     <div className="navbar bg-base-100" data-theme="cupcake">
       <div className="navbar-start">
@@ -35,134 +56,317 @@ const Navbar = () => {
             tabIndex={0}
             className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
           >
-            <li>
-              <Link to="/">
-                <img src={Home} alt="icon" width={30} />
-                Inicio
-              </Link>
-            </li>
-            <li>
-              <Link to="/admisiones">
-                <img src={Admissions} alt="icon" width={30} />
-                Admisiones
-              </Link>
-            </li>
-            <li>
-              <sumary>
-                <img src={Us} alt="icon" width={30} />
-                Nosotros
-              </sumary>
-              <ul className="p-2">
+            {session === false && adminSession === false && (
+              <>
                 <li>
-                  <Link to="/nosotros">
-                    <img src={KnowUs} alt="icon" width={25} />
-                    Conocenos
+                  <Link to="/">
+                    <img src={Home} alt="icon" width={30} />
+                    Inicio
                   </Link>
                 </li>
                 <li>
-                  <Link to="/metodologia">
-                    <img src={Metodology} alt="icon" width={25} />
-                    Metodología
+                  <Link to="/admisiones">
+                    <img src={Admissions} alt="icon" width={30} />
+                    Admisiones
                   </Link>
                 </li>
                 <li>
-                  <Link to="/servicios">
-                    <img src={Services} alt="icon" width={25} />
-                    Servicios
+                  <summary>
+                    <img src={Us} alt="icon" width={30} />
+                    Nosotros
+                  </summary>
+                  <ul className="p-2">
+                    <li>
+                      <Link to="/nosotros">
+                        <img src={KnowUs} alt="icon" width={25} />
+                        Conocenos
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/metodologia">
+                        <img src={Metodology} alt="icon" width={25} />
+                        Metodología
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/servicios">
+                        <img src={Services} alt="icon" width={25} />
+                        Servicios
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/espacios">
+                        <img src={Spaces} alt="icon" width={25} />
+                        Espacios
+                      </Link>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <Link to="/galeria">
+                    <img src={Gallery} alt="icon" width={30} />
+                    Galeria
                   </Link>
                 </li>
                 <li>
-                  <Link to="/espacios">
-                    <img src={Spaces} alt="icon" width={25} />
-                    Espacios
+                  <Link to="/contactanos">
+                    <img src={Contact} alt="icon" width={30} />
+                    Contáctanos
                   </Link>
                 </li>
-              </ul>
-            </li>
-            <li>
-              <Link to="/galeria">
-                <img src={Gallery} alt="icon" width={30} />
-                Galeria
-              </Link>
-            </li>
-            <li>
-              <Link to="/contactanos">
-                <img src={Contact} alt="icon" width={30} />
-                Contáctanos
-              </Link>
-            </li>
+              </>
+            )}
+            {session && (
+              <>
+                <li>
+                  <Link to="/">
+                    <img src={Home} alt="icon" width={37} />
+                    Inicio
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/docente/juegos">
+                    <img src={Toys} alt="icon" width={37} />
+                    Juegos
+                  </Link>
+                </li>
+                <li>
+                  <summary>
+                    <img src={Us} alt="icon" width={30} />
+                    Nosotros
+                  </summary>
+                  <ul className="p-2">
+                    <li>
+                      <Link to="/nosotros">
+                        <img src={KnowUs} alt="icon" width={25} />
+                        Conocenos
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/espacios">
+                        <img src={Spaces} alt="icon" width={25} />
+                        Espacios
+                      </Link>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <Link to="/galeria">
+                    <img src={Gallery} alt="icon" width={37} />
+                    Galeria
+                  </Link>
+                </li>
+              </>
+            )}
+            {adminSession && (
+              <>
+                <li>
+                  <Link to="/">
+                    <img src={Home} alt="icon" width={37} />
+                    Inicio
+                  </Link>
+                </li>
+                <li>
+                  <summary>
+                    <img src={Us} alt="icon" width={30} />
+                    Docentes
+                  </summary>
+                  <ul className="p-2">
+                    <li>
+                      <Link to="/nosotros">
+                        <img src={KnowUs} alt="icon" width={25} />
+                        Ver docentes
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/espacios">
+                        <img src={Spaces} alt="icon" width={25} />
+                        Registrar docentes
+                      </Link>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <Link to="/admin/galeria">
+                    <img src={Gallery} alt="icon" width={37} />
+                    Galeria
+                  </Link>
+                </li>
+              </>
+            )}
           </ul>
         </div>
-        <Link to="/" className="btn btn-ghost normal-case text-xl ms-3 h-20 w-24">
+        <Link
+          to="/"
+          className="btn btn-ghost normal-case text-xl ms-3 h-20 w-24"
+        >
           <img src={Logo} alt="logo" width={52} />
         </Link>
       </div>
-      <div className="navbar-center hidden z-40 lg:flex" >
+      <div className="navbar-center hidden z-40 lg:flex">
         <ul className="menu menu-horizontal px-1 font-light">
-          <li>
-            <Link to="/">
-              <img src={Home} alt="icon" width={37} />
-              Inicio
-            </Link>
-          </li>
-          <li>
-            <Link to="/admisiones">
-              <img src={Admissions} alt="icon" width={37} />
-              Admisiones
-            </Link>
-          </li>
-          <li tabIndex={0}>
-            <details>
-              <summary>
-                <img src={Us} alt="icon" width={37} />
-                Nosotros
-              </summary>
-              <ul className="p-2">
-                <li>
-                  <Link to="/nosotros">
-                    <img src={KnowUs} alt="icon" width={20} />
-                    Conocenos
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/metodologia">
-                    <img src={Metodology} alt="icon" width={20} />
-                    Metodología
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/servicios">
-                    <img src={Services} alt="icon" width={20} />
-                    Servicios
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/espacios">
-                    <img src={Spaces} alt="icon" width={20} />
-                    Espacios
-                  </Link>
-                </li>
-              </ul>
-            </details>
-          </li>
-          <li>
-            <Link to="/galeria">
-              <img src={Gallery} alt="icon" width={37} />
-              Galeria
-            </Link>
-          </li>
-          <li>
-            <Link to="/contactanos">
-              <img src={Contact} alt="icon" width={37} />
-              Contáctanos
-            </Link>
-          </li>
+          {session === false && adminSession === false && (
+            <>
+              <li>
+                <Link to="/">
+                  <img src={Home} alt="icon" width={37} />
+                  Inicio
+                </Link>
+              </li>
+              <li>
+                <Link to="/admisiones">
+                  <img src={Admissions} alt="icon" width={37} />
+                  Admisiones
+                </Link>
+              </li>
+              <li tabIndex={0}>
+                <details>
+                  <summary>
+                    <img src={Us} alt="icon" width={37} />
+                    Nosotros
+                  </summary>
+                  <ul className="p-2">
+                    <li>
+                      <Link to="/nosotros">
+                        <img src={KnowUs} alt="icon" width={20} />
+                        Conocenos
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/metodologia">
+                        <img src={Metodology} alt="icon" width={20} />
+                        Metodología
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/servicios">
+                        <img src={Services} alt="icon" width={20} />
+                        Servicios
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/espacios">
+                        <img src={Spaces} alt="icon" width={20} />
+                        Espacios
+                      </Link>
+                    </li>
+                  </ul>
+                </details>
+              </li>
+              <li>
+                <Link to="/galeria">
+                  <img src={Gallery} alt="icon" width={37} />
+                  Galeria
+                </Link>
+              </li>
+              <li>
+                <Link to="/contactanos">
+                  <img src={Contact} alt="icon" width={37} />
+                  Contáctanos
+                </Link>
+              </li>
+            </>
+          )}
+          {session && (
+            <>
+              <li>
+                <Link to="/">
+                  <img src={Home} alt="icon" width={37} />
+                  Inicio
+                </Link>
+              </li>
+              <li>
+                <Link to="/docente/juegos">
+                  <img src={Toys} alt="icon" width={37} />
+                  Juegos
+                </Link>
+              </li>
+              <li tabIndex={0}>
+                <details>
+                  <summary>
+                    <img src={Us} alt="icon" width={37} />
+                    Nosotros
+                  </summary>
+                  <ul className="p-2">
+                    <li>
+                      <Link to="/nosotros">
+                        <img src={KnowUs} alt="icon" width={20} />
+                        Conocenos
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/espacios">
+                        <img src={Spaces} alt="icon" width={20} />
+                        Espacios
+                      </Link>
+                    </li>
+                  </ul>
+                </details>
+              </li>
+              <li>
+                <Link to="/galeria">
+                  <img src={Gallery} alt="icon" width={37} />
+                  Galeria
+                </Link>
+              </li>
+            </>
+          )}
+          {adminSession && (
+            <>
+              <li>
+                <Link to="/">
+                  <img src={Home} alt="icon" width={37} />
+                  Inicio
+                </Link>
+              </li>
+              <li tabIndex={0}>
+                <details>
+                  <summary>
+                    <img src={Backpack} alt="icon" width={37} />
+                    Docentes
+                  </summary>
+                  <ul className="p-2">
+                    <li>
+                      <Link to="/admin/docentes">
+                        <img src={Us} alt="icon" width={20} />
+                        Ver docentes
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/admin/registrar">
+                        <img src={Metodology} alt="icon" width={20} />
+                        Registrar docentes
+                      </Link>
+                    </li>
+                  </ul>
+                </details>
+              </li>
+              <li>
+                <Link to="/admin/galeria">
+                  <img src={Gallery} alt="icon" width={37} />
+                  Galeria
+                </Link>
+              </li>
+            </>
+          )}
         </ul>
       </div>
       <div className="navbar-end">
-        <Link to="/iniciarsesion" className="btn btn-primary me-3 text-xs">
-          Iniciar Sesión
-        </Link>
+        {session || adminSession ? (
+          <button
+            to="/iniciarsesion"
+            className="btn btn-primary me-3 text-xs"
+            onClick={() => {
+              session ? logoutUser() : logoutAdmin();
+            }}
+          >
+            Cerrar sesion
+          </button>
+        ) : (
+          <Link to="/iniciarsesion" className="btn btn-primary me-3 text-xs">
+            Iniciar Sesión
+          </Link>
+        )}
       </div>
     </div>
   );

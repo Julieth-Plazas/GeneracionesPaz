@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
-import Bell from "../assets/bell.png";
-import Boat from "../assets/paper-boat.png";
-import Clock from "../assets/clock.png";
+import Bell from "../../assets/bell.png";
+import Boat from "../../assets/paper-boat.png";
+import Clock from "../../assets/clock.png";
 
 const Contact = () => {
   const [loading, setLoading] = useState(false);
@@ -68,7 +68,7 @@ const Contact = () => {
                 </label>
                 <input
                   type="email"
-                  placeholder="correo electrónico"
+                  placeholder="Correo electrónico"
                   name="correo"
                   className="input input-bordered"
                   {...register("correo", {
@@ -93,7 +93,7 @@ const Contact = () => {
                 </label>
                 <input
                   type="text"
-                  placeholder="nombre"
+                  placeholder="Nombre"
                   name="nombre"
                   className="input input-bordered"
                   {...register("age", {
@@ -118,7 +118,7 @@ const Contact = () => {
                 </label>
                 <input
                   type="text"
-                  placeholder="asunto"
+                  placeholder="Asunto"
                   name="asunto"
                   className="input input-bordered"
                   {...register("age", {

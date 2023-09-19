@@ -9,6 +9,8 @@ router.post("/", userCtrl.createUser)
 
 router.get("/:id", userCtrl.getUser)
 
+router.post("/login", userCtrl.login)
+
 router.put("/:id", userCtrl.updateUser)
 
 router.delete("/:id", userCtrl.deleteUser)
