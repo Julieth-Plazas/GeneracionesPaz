@@ -89,6 +89,7 @@ function App() {
         </BrowserRouter>
       </UserProvider>
     </AdminProvider>
+    
   );
 }
 
