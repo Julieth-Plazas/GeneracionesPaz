@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 
 // Importar sonidos
-import backgroundMusic from "../assets/sonidos/angry-birds-videojuegos-.mp3";
-import congratsSound from "../assets/sonidos/text-message.mp3";
-import additionSound from "../assets/sonidos/donkey-kong-coin.mp3"; // Sonido de suma
-import subtractionSound from "../assets/sonidos/010564339_prev.mp3"; // Sonido de resta
+import backgroundMusic from "../../assets/sonidos/angry-birds-videojuegos-.mp3";
+import congratsSound from "../../assets/sonidos/text-message.mp3";
+import additionSound from "../../assets/sonidos/donkey-kong-coin.mp3"; // Sonido de suma
+import subtractionSound from "../../assets/sonidos/010564339_prev.mp3"; // Sonido de resta
 
 const GameSumRes1 = () => {
     const [hiddenNumbers, setHiddenNumbers] = useState([]);
