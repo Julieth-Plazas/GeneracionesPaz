@@ -39,7 +39,6 @@ function App() {
     <AdminProvider>
       <UserProvider>
         <BrowserRouter>
-          <ScrollToTop />
           <Navbar />
           <Routes>
             <Route path={HOME} element={<Home />} />
