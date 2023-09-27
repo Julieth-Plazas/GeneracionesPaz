@@ -8,7 +8,6 @@ const About = () => {
   return (
     <div>
       <div className="bg-white mb-3 px-6 my-8 space-y-8 md:space-y-0 md:flex md:items-start w-full md:gap-12">
-        {/* Contenedor MISION */}
         <div className="border rounded-2xl shadow-sm flex flex-col md:flex-row gap-6 items-center p-4 w-full">
           <div className="md:w-1/2 lg:w-5/12 h-64">
             <img
@@ -31,7 +30,6 @@ const About = () => {
           </div>
         </div>
 
-        {/* Contenedor VISION */}
         <div className="border rounded-2xl shadow-sm flex flex-col md:flex-row-reverse gap-6 items-center p-4 w-full">
           <div className="md:w-1/2 lg:w-5/12 h-64">
             <img

@@ -71,35 +71,15 @@ const Navbar = () => {
                   </Link>
                 </li>
                 <li>
-                  <summary>
-                    <img src={Us} alt="icon" width={30} />
-                    Nosotros
-                  </summary>
+                  
                   <ul className="p-2">
                     <li>
                       <Link to="/nosotros">
                         <img src={KnowUs} alt="icon" width={25} />
-                        Conocenos
+                        Nosotros
                       </Link>
                     </li>
-                    <li>
-                      <Link to="/metodologia">
-                        <img src={Metodology} alt="icon" width={25} />
-                        Metodología
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="/servicios">
-                        <img src={Services} alt="icon" width={25} />
-                        Servicios
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="/espacios">
-                        <img src={Spaces} alt="icon" width={25} />
-                        Espacios
-                      </Link>
-                    </li>
+                                       
                   </ul>
                 </li>
                 <li>
