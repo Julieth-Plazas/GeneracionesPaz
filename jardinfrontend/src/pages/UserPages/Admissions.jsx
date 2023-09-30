@@ -15,7 +15,7 @@ const Admissions = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-2 gap-10 mt-10">
+      <div className="grid grid-cols-2 mt-10">
         <div className="max-w-xl border rounded-2xl shadow-sm flex flex-col items-center p-4 space-y-4 transform translate-x-20">
           <h3
             className="text-3xl font-semibold leading-relaxed text-gray-900"
@@ -41,7 +41,7 @@ const Admissions = () => {
         </div>
 
         <div>
-          <div className="max-w-xl ml-20 border rounded-2xl shadow-sm flex flex-col items-center p-4 space-y-4 mb-10">
+          <div className="max-w-xl border rounded-2xl shadow-sm flex flex-col items-center p-4 space-y-4 mb-10">
             <h3
               className="text-3xl font-semibold leading-relaxed text-gray-900"
               style={{ color: "green" }}
@@ -59,7 +59,7 @@ const Admissions = () => {
             </ul>
           </div>
 
-          <div className="max-w-xl ml-20 border rounded-2xl shadow-sm flex flex-col items-center p-4 space-y-4 mb-10">
+          <div className="max-w-xl border rounded-2xl shadow-sm flex flex-col items-center p-4 space-y-4 mb-10">
             <h3
               className="text-3xl font-semibold leading-relaxed text-gray-900"
               style={{ color: "green" }}
