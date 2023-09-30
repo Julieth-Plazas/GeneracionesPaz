@@ -2,7 +2,8 @@ import Garden1 from "../assets/jardin1.jpg";
 import Garden2 from "../assets/jardin2.jpg";
 import Garden3 from "../assets/jardin3.jpg";
 import Garden4 from "../assets/jardin4.jpg";
-
+import React, { useState } from "react";
+import "daisyui/dist/full.css";
 function Carousel() {
   return (
     <div className="carousel carousel-center w-196 h-96 p-4 space-x-4 bg-transparent rounded-box">
