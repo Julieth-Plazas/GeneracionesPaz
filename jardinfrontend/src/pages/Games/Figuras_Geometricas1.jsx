@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
-import aciertoSound from '../assets/sonidos/010564339_prev.mp3'; // Reemplaza con la ruta correcta a tu archivo de sonido de acierto
-import errorSound from '../assets/sonidos/megaman-x-error.mp3'; // Reemplaza con la ruta correcta a tu archivo de sonido de error
-import ganarSound from '../assets/sonidos/donkey-kong.mp3'; // Reemplaza con la ruta correcta a tu archivo de sonido de ganar
+import aciertoSound from '../../assets/sonidos/010564339_prev.mp3'; // Reemplaza con la ruta correcta a tu archivo de sonido de acierto
+import errorSound from '../../assets/sonidos/megaman-x-error.mp3'; // Reemplaza con la ruta correcta a tu archivo de sonido de error
+import ganarSound from '../../assets/sonidos/donkey-kong.mp3'; // Reemplaza con la ruta correcta a tu archivo de sonido de ganar
 
 function Figuras1() {
   const shapes = [
