@@ -15,7 +15,7 @@ const Contact = () => {
 
   return (
     <>
-      <div className="hero min-h-full" data-theme="cupcake">
+      <div className="hero min-h-full bg-base-100 shadow-inner border-t" data-theme="cupcake">
         <div className="hero-content flex-col lg:flex-col">
           <div className="mb-5 sm:mb-8">
             <h1 className="text-3xl lg:text-4xl font-bold text-center col-span-6">

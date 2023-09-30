@@ -1,10 +1,9 @@
 import React from "react";
 import inscripcion from "../../assets/Matriculas.jpg";
 
-
 const Admissions = () => {
   return (
-    <section class="relative pt-8 lg:pt-4 pb-16 bg-white"> 
+    <section class="relative pt-8 lg:pt-4 pb-16 bg-base-100 shadow-inner border-t">
       <div class="flex flex-1 justify-center">
         <div class="lg:w-full lg:mx-20 relative">
           <img
@@ -12,16 +11,22 @@ const Admissions = () => {
             alt="Matriculas"
             loading="lazy"
             class="border rounded-2xl w-2/3 mx-auto mt-4 mb-4"
-            />
+          />
         </div>
       </div>
 
       <div className="grid grid-cols-2 gap-10 mt-10">
-      <div className="max-w-xl border rounded-2xl shadow-sm flex flex-col items-center p-4 space-y-4 transform translate-x-20">
-          <h3 className="text-3xl font-semibold leading-relaxed text-gray-900" style={{ color: "green" }}>
+        <div className="max-w-xl border rounded-2xl shadow-sm flex flex-col items-center p-4 space-y-4 transform translate-x-20">
+          <h3
+            className="text-3xl font-semibold leading-relaxed text-gray-900"
+            style={{ color: "green" }}
+          >
             Requisitos de Matricula
           </h3>
-          <ul className="space-y-1 text-gray-500 list-disc list-inside" style={{ color: "black" }}>
+          <ul
+            className="space-y-1 text-gray-500 list-disc list-inside"
+            style={{ color: "black" }}
+          >
             <li>Registro Civil de Nacimiento</li>
             <li>Certificado Médico Reciente</li>
             <li>Fotocopia del Carné de Vacunación</li>
@@ -36,11 +41,17 @@ const Admissions = () => {
         </div>
 
         <div>
-        <div className="max-w-xl ml-20 border rounded-2xl shadow-sm flex flex-col items-center p-4 space-y-4 mb-10">
-            <h3 className="text-3xl font-semibold leading-relaxed text-gray-900" style={{ color: "green" }}>
+          <div className="max-w-xl ml-20 border rounded-2xl shadow-sm flex flex-col items-center p-4 space-y-4 mb-10">
+            <h3
+              className="text-3xl font-semibold leading-relaxed text-gray-900"
+              style={{ color: "green" }}
+            >
               Calendario
             </h3>
-            <ul className="space-y-1 text-gray-500 list-disc list-inside" style={{ color: "black" }}>
+            <ul
+              className="space-y-1 text-gray-500 list-disc list-inside"
+              style={{ color: "black" }}
+            >
               <li>PRIMER PERIODO: 1 de Febrero - 31 de Marzo</li>
               <li>SEGUNDO PERIODO: 10 de Abril - 9 de Junio</li>
               <li>TERCER PERIODO: 10 de Julio - 8 de Septiembre</li>
@@ -49,10 +60,16 @@ const Admissions = () => {
           </div>
 
           <div className="max-w-xl ml-20 border rounded-2xl shadow-sm flex flex-col items-center p-4 space-y-4 mb-10">
-            <h3 className="text-3xl font-semibold leading-relaxed text-gray-900" style={{ color: "green" }}>
+            <h3
+              className="text-3xl font-semibold leading-relaxed text-gray-900"
+              style={{ color: "green" }}
+            >
               Recesos Académicos
             </h3>
-            <ul className="space-y-1 text-gray-500 list-disc list-inside" style={{ color: "black" }}>
+            <ul
+              className="space-y-1 text-gray-500 list-disc list-inside"
+              style={{ color: "black" }}
+            >
               <li>SEMANA SANTA: del 3 de Abril al 7 de Abril</li>
               <li>VACACIONES: del 20 de Junio al 7 de Julio</li>
               <li>SEMANA DE OCTUBRE: del 9 al 3 de Octubre</li>

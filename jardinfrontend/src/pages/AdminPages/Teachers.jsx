@@ -22,7 +22,7 @@ const Teachers = () => {
   return (
     <>
       {teachers.length > 0 ? (
-        <div className="min-h-screen" data-theme="cupcake">
+        <div className="min-h-screen bg-base-100 shadow-inner border-t" data-theme="cupcake">
           <Table data={teachers} type="teachers" />
           <div
             className="join w-full p-5 content-center justify-center"
