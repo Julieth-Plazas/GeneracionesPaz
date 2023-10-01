@@ -13,7 +13,7 @@ const Home = () => {
             </div>
             <div className="p-10">
               <h1 className="text-5xl font-bold">Generaciones de Paz</h1>
-              <p className="py-6">
+              <p className="py-6 text-justify">
                 El jardín infantil “GENERACIONES DE PAZ” fundamenta su formación
                 en principios y valores que privilegian el afecto, el respeto,
                 la tolerancia, la espiritualidad y un proceso cognitivo
@@ -27,7 +27,7 @@ const Home = () => {
                 comprende que cada una de sus acciones produce circunstancias
                 asertivas o negativas que necesariamente deben ser asumidas
               </p>
-              <Link to="/conocenos" className="btn btn-primary">
+              <Link to="/nosotros" className="btn btn-primary">
                 Conocenos
               </Link>
             </div>

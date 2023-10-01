@@ -6,88 +6,121 @@ import Mision from "../../assets/Mision.png";
 
 const About = () => {
   return (
-    <div className="bg-base-100 shadow-inner border-t">
-      <div className="bg-white mb-3 p-10 my-8 space-y-4 md:space-y-0 md:flex md:items-start w-full md:gap-12 ">
-        <div className="border rounded-2xl shadow-sm flex flex-col md:flex-row gap-6 items-center p-4 w-full">
-          <div className="md:w-1/2 lg:w-5/12 h-64">
-            <img
-              src={Mision}
-              alt="MISION"
-              loading="lazy"
-              className=" w-full h-full object-cover"
-            />
-          </div>
-          <div className="md:w-1/2 lg:w-6/12 space-y-8 min-h-[200px]">
-            <h2 className="text-2xl text-gray-900 font-bold md:text-4xl">
-              MISION
-            </h2>
-            <p className="text-gray-600">
-              Ofrecer atención integral a la primera infancia con calidad,
-              dentro de la normatividad vigente y el servicio de educación
-              preescolar, desarrollando competencias generales para potenciar a
-              los niños en forma integral.
-            </p>
-          </div>
+    <div className="grid grid-cols-1 gap-6 p-12 md:grid-cols-2">
+      <div className="col-span-1 grid grid-flow-col border rounded-2xl p-5 justify-center align-middle border-black shadow-lg">
+        <div className="h-64 w-48">
+          <img
+            src={Mision}
+            alt="mision"
+            loading="lazy"
+            className=" w-full h-full"
+          />
         </div>
-
-        <div className="border rounded-2xl shadow-sm flex flex-col md:flex-row-reverse gap-6 items-center p-4 w-full">
-          <div className="md:w-1/2 lg:w-5/12 h-64">
-            <img
-              src={jardin}
-              alt="VISION"
-              loading="lazy"
-              className="border rounded-2xl w-full h-full object-cover"
-            />
-          </div>
-          <div className="md:w-1/2 lg:w-6/12 space-y-9 min-h-[200px]">
-            <h2 className="text-2xl text-gray-900 font-bold md:text-4xl">
-              VISION
-            </h2>
-            <p className="text-gray-600">
-              Posicionar a esta institución educativa privada como una de las
-              que ofrece mejor calidad en la ciudad y proyectarla a nivel
-              nacional con proyectos que favorezcan la atención de niños y
-              niñas.
-            </p>
-          </div>
+        <div className="flex flex-col p-5">
+          <h2
+            className="text-3xl font-semibold leading-relaxed text-gray-900"
+            style={{ color: "green" }}
+          >
+            MISIÓN
+          </h2>
+          <p
+            className="space-y-2 text-gray-500 list-disc list-inside py-4 text-justify"
+            style={{ color: "black" }}
+          >
+            Ofrecer atención integral a la primera infancia con calidad, dentro
+            de la normatividad vigente y el servicio de educación preescolar,
+            desarrollando competencias generales para potenciar a los niños en
+            forma integral.
+          </p>
         </div>
       </div>
-
-      <div className="bg-white mb-3 p-10 my-8 space-y-4 md:space-y-0 md:flex md:items-start md:gap-12">
-        <div className="border rounded-2xl shadow-sm flex flex-col md:flex-row gap-6 items-center p-4 w-full">
-          <div className="md:w-1/2 lg:w-5/12 h-64">
-            <img src={maestra} alt="MISION" loading="lazy" />
-          </div>
-          <div className="md:w-1/2 lg:w-6/12 space-y-8 min-h-[200px]">
-            <h2 className="text-xl text-gray-900 font-bold md:text-3xl">
-              COMPONENTE ADMINISTRATIVO
-            </h2>
-            <div className="text-gray-600">
-              <p>Representante Legal- Directora </p>
-              <p>&bull;coordinadora </p>
-              <p>&bull;Profesoras</p>
-              <p>&bull;Estudiantes </p>
-              <p>&bull; Padres de Familia</p>
-            </div>
-          </div>
+      <div className="col-span-1 grid grid-flow-col border rounded-2xl p-5 justify-center align-middle border-black shadow-lg">
+        <div className="h-64 w-48">
+          <img
+            src={jardin}
+            alt="vision"
+            loading="lazy"
+            className=" w-full h-full"
+          />
         </div>
+        <div className="flex flex-col p-5">
+          <h2
+            className="text-3xl font-semibold leading-relaxed text-gray-900"
+            style={{ color: "green" }}
+          >
+            VISIÓN
+          </h2>
+          <p
+            className="space-y-2 text-gray-500 list-disc list-inside py-4 text-justify"
+            style={{ color: "black" }}
+          >
+            Posicionar a esta institución educativa privada como una de las que
+            ofrece mejor calidad en la ciudad y proyectarla a nivel nacional con
+            proyectos que favorezcan la atención de niños y niñas.
+          </p>
+        </div>
+      </div>
+      <div className="col-span-1 grid grid-flow-col border rounded-2xl p-5 justify-center align-middle border-black shadow-lg">
+        <div className="h-64 w-48">
+          <img
+            src={maestra}
+            alt="administrativo"
+            loading="lazy"
+            className="w-full h-full"
+          />
+        </div>
+        <div className="flex flex-col p-5">
+          <h2
+            className="text-3xl font-semibold leading-relaxed text-gray-900"
+            style={{ color: "green" }}
+          >
+            COMPONENTE ADMINISTRATIVO
+          </h2>
+          <p
+            className="space-y-2 text-gray-500 list-disc list-inside py-4 text-justify"
+            style={{ color: "black" }}
+          >
+            <p>Formado por:</p>
+            <ul className="list-disc list-inside ms-5">
+              <li>Representante legal - directora</li>
+              <li>Coordinadora</li>
+              <li>Profesoras</li>
+              <li>Estudiantes</li>
+              <li>Padres de familia</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <div className="col-span-1 grid grid-flow-col border rounded-2xl p-5 justify-center align-middle border-black shadow-lg">
+        <div className="h-64 w-48">
+          <img
+            src={pedagogico}
+            alt="pedagogico"
+            loading="lazy"
+            className=" w-full h-full"
+          />
+        </div>
+        <div className="flex flex-col p-5">
+          <h2
+            className="text-3xl font-semibold leading-relaxed text-gray-900"
+            style={{ color: "green" }}
+          >
+            COMPONENTE PEDAGÓGICO
+          </h2>
+          <p
+            className="space-y-2 text-gray-500 list-disc list-inside py-4 text-justify"
+            style={{ color: "black" }}
+          >
 
-        {/* Contenedor Pedagogico */}
-        <div className="border rounded-2xl shadow-sm flex flex-col md:flex-row-reverse gap-6 items-center p-4 w-full">
-          <div className="md:w-1/2 lg:w-5/12 h-64">
-            <img src={pedagogico} alt="comp. pedagogico" loading="lazy" />
-          </div>
-          <div className="md:w-1/2 lg:w-6/12 space-y-2 min-h-[200px]">
-            <h2 className="text-xl text-gray-800 font-bold md:text-3xl">
-              COMPONENTE PEDAGOGICO
-            </h2>
-            <p className="text-gray-600">&bull;Socio -Afectivo </p>
-            <p className="text-gray-600">&bull;Cognitiva</p>
-            <p className="text-gray-600">&bull;Comunicativa</p>
-            <p className="text-gray-600">&bull;Corporal (Fina, Gruesa)</p>
-            <p className="text-gray-600">&bull;Espiritual, ética y Valores </p>
-            <p className="text-gray-600">&bull;Estética </p>
-          </div>
+            <ul className="list-disc list-inside ms-5">
+              <li>Socio - afectivo</li>
+              <li>Cognitiva</li>
+              <li>Comunicativa</li>
+              <li>Corporal (Fina, Gruesa)</li>
+              <li>Espiritual, ética y valores</li>
+              <li>Estética</li>
+            </ul>
+          </p>
         </div>
       </div>
     </div>
