@@ -24,7 +24,6 @@ userCtrl.login = async (req, res) => {
     const data = req.body;
     const user = await User.find({ email: data.userEmail });
     
-
     if (user.length > 0) {
       const validation = await bcrypt.compare(data.userPassword, user[0].password)
       if (validation) {

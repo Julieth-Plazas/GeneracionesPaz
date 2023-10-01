@@ -108,7 +108,7 @@ const Login = () => {
               </label>
             </div>
             {credentialError !== "" && (
-              <div className="text-red-600 text-center">
+              <div className="text-red-600 text-center col-span-4">
                 <small>{credentialError}</small>
               </div>
             )}

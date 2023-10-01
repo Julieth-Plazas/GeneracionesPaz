@@ -37,7 +37,7 @@ const Regist = () => {
   }
 
   return (
-    <div className="hero min-h-screen min-w-fit bg-base-100 shadow-inner border-t" data-theme="cupcake">
+    <div className="hero min-h-screen min-w-fit bg-base-100 shadow-inner border-t p-20" data-theme="cupcake">
       <div className="hero-content flex-col-reverse lg:flex-row">
         <div className="card flex-shrink-0 max-w-md shadow-2xl bg-base-200">
           <form

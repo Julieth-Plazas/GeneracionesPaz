@@ -10,6 +10,8 @@ import Services from "../assets/bricks.png";
 import Spaces from "../assets/seesaw.png";
 import Toys from "../assets/toys.png";
 import Backpack from "../assets/backpack.png";
+import Bricks from '../assets/bricks.png'
+import Book from '../assets/book.png'
 import { Link, useNavigate } from "react-router-dom";
 import { AdminContext } from "../context/AdminContext";
 import { TeacherContext } from "../context/TeacherContext";
@@ -71,15 +73,37 @@ const Navbar = () => {
                   </Link>
                 </li>
                 <li>
-                  
+                  <Link to="/nosotros">
+                    <img src={Us} alt="icon" width={30} />
+                    Nosotros
+                  </Link>
+                </li>
+                <li>
                   <ul className="p-2">
                     <li>
                       <Link to="/nosotros">
-                        <img src={KnowUs} alt="icon" width={25} />
-                        Nosotros
+                        <img src={KnowUs} alt="icon" width={20} />
+                        Conocenos
                       </Link>
                     </li>
-                                       
+                    <li>
+                      <Link to="/metodologia">
+                        <img src={Metodology} alt="icon" width={20} />
+                        Metodología
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/servicios">
+                        <img src={Services} alt="icon" width={20} />
+                        Servicios
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/espacios">
+                        <img src={Spaces} alt="icon" width={20} />
+                        Espacios
+                      </Link>
+                    </li>
                   </ul>
                 </li>
                 <li>
@@ -100,13 +124,13 @@ const Navbar = () => {
               <>
                 <li>
                   <Link to="/">
-                    <img src={Home} alt="icon" width={37} />
+                    <img src={Home} alt="icon" width={30} />
                     Inicio
                   </Link>
                 </li>
                 <li>
                   <Link to="/docente/juegos">
-                    <img src={Toys} alt="icon" width={37} />
+                    <img src={Toys} alt="icon" width={30} />
                     Juegos
                   </Link>
                 </li>
@@ -118,13 +142,13 @@ const Navbar = () => {
                   <ul className="p-2">
                     <li>
                       <Link to="/nosotros">
-                        <img src={KnowUs} alt="icon" width={25} />
+                        <img src={KnowUs} alt="icon" width={20} />
                         Conocenos
                       </Link>
                     </li>
                     <li>
                       <Link to="/espacios">
-                        <img src={Spaces} alt="icon" width={25} />
+                        <img src={Spaces} alt="icon" width={20} />
                         Espacios
                       </Link>
                     </li>
@@ -132,7 +156,7 @@ const Navbar = () => {
                 </li>
                 <li>
                   <Link to="/galeria">
-                    <img src={Gallery} alt="icon" width={37} />
+                    <img src={Gallery} alt="icon" width={30} />
                     Galeria
                   </Link>
                 </li>
@@ -142,35 +166,49 @@ const Navbar = () => {
               <>
                 <li>
                   <Link to="/">
-                    <img src={Home} alt="icon" width={37} />
+                    <img src={Home} alt="icon" width={30} />
                     Inicio
                   </Link>
                 </li>
                 <li>
                   <summary>
-                    <img src={Us} alt="icon" width={30} />
+                    <img src={Backpack} alt="icon" width={30} />
                     Docentes
                   </summary>
                   <ul className="p-2">
                     <li>
                       <Link to="/nosotros">
-                        <img src={KnowUs} alt="icon" width={25} />
+                        <img src={Us} alt="icon" width={20} />
                         Ver docentes
                       </Link>
                     </li>
                     <li>
                       <Link to="/espacios">
-                        <img src={Spaces} alt="icon" width={25} />
+                        <img src={Metodology} alt="icon" width={20} />
                         Registrar docentes
                       </Link>
                     </li>
                   </ul>
                 </li>
                 <li>
-                  <Link to="/admin/galeria">
-                    <img src={Gallery} alt="icon" width={37} />
+                  <summary>
+                    <img src={Gallery} alt="icon" width={30} />
                     Galeria
-                  </Link>
+                  </summary>
+                  <ul className="p-2">
+                    <li>
+                      <Link to="/nosotros">
+                        <img src={Book} alt="icon" width={20} />
+                        Ver galerias
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/espacios">
+                        <img src={Bricks} alt="icon" width={20} />
+                        Crear galeria
+                      </Link>
+                    </li>
+                  </ul>
                 </li>
               </>
             )}
@@ -189,20 +227,20 @@ const Navbar = () => {
             <>
               <li>
                 <Link to="/">
-                  <img src={Home} alt="icon" width={37} />
+                  <img src={Home} alt="icon" width={40} />
                   Inicio
                 </Link>
               </li>
               <li>
                 <Link to="/admisiones">
-                  <img src={Admissions} alt="icon" width={37} />
+                  <img src={Admissions} alt="icon" width={40} />
                   Admisiones
                 </Link>
               </li>
               <li tabIndex={0}>
                 <details>
                   <summary>
-                    <img src={Us} alt="icon" width={37} />
+                    <img src={Us} alt="icon" width={40} />
                     Nosotros
                   </summary>
                   <ul className="p-2">
@@ -235,13 +273,13 @@ const Navbar = () => {
               </li>
               <li>
                 <Link to="/galeria">
-                  <img src={Gallery} alt="icon" width={37} />
+                  <img src={Gallery} alt="icon" width={40} />
                   Galeria
                 </Link>
               </li>
               <li>
                 <Link to="/contactanos">
-                  <img src={Contact} alt="icon" width={37} />
+                  <img src={Contact} alt="icon" width={40} />
                   Contáctanos
                 </Link>
               </li>
@@ -251,20 +289,20 @@ const Navbar = () => {
             <>
               <li>
                 <Link to="/">
-                  <img src={Home} alt="icon" width={37} />
+                  <img src={Home} alt="icon" width={40} />
                   Inicio
                 </Link>
               </li>
               <li>
                 <Link to="/docente/juegos">
-                  <img src={Toys} alt="icon" width={37} />
+                  <img src={Toys} alt="icon" width={40} />
                   Juegos
                 </Link>
               </li>
               <li tabIndex={0}>
                 <details>
                   <summary>
-                    <img src={Us} alt="icon" width={37} />
+                    <img src={Us} alt="icon" width={40} />
                     Nosotros
                   </summary>
                   <ul className="p-2">
@@ -285,7 +323,7 @@ const Navbar = () => {
               </li>
               <li>
                 <Link to="/galeria">
-                  <img src={Gallery} alt="icon" width={37} />
+                  <img src={Gallery} alt="icon" width={40} />
                   Galeria
                 </Link>
               </li>
@@ -295,14 +333,14 @@ const Navbar = () => {
             <>
               <li>
                 <Link to="/">
-                  <img src={Home} alt="icon" width={37} />
+                  <img src={Home} alt="icon" width={40} />
                   Inicio
                 </Link>
               </li>
               <li tabIndex={0}>
                 <details>
                   <summary>
-                    <img src={Backpack} alt="icon" width={37} />
+                    <img src={Backpack} alt="icon" width={40} />
                     Docentes
                   </summary>
                   <ul className="p-2">
@@ -321,11 +359,27 @@ const Navbar = () => {
                   </ul>
                 </details>
               </li>
-              <li>
-                <Link to="/admin/galeria">
-                  <img src={Gallery} alt="icon" width={37} />
-                  Galeria
-                </Link>
+              <li tabIndex={0}>
+                <details>
+                  <summary>
+                    <img src={Gallery} alt="icon" width={40} />
+                    Galeria
+                  </summary>
+                  <ul className="p-2">
+                    <li>
+                      <Link to="/admin/gallery">
+                        <img src={Book} alt="icon" width={20} />
+                        Ver galerias
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/admin/crear-galeria">
+                        <img src={Bricks} alt="icon" width={20} />
+                        Crear galeria
+                      </Link>
+                    </li>
+                  </ul>
+                </details>
               </li>
             </>
           )}
