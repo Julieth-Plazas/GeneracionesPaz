@@ -43,7 +43,7 @@ const Login = () => {
   }
 
   return (
-    <div className="hero min-h-screen bg-base-100" data-theme="cupcake">
+    <div className="hero min-h-screen bg-base-100 shadow-inner border-t" data-theme="cupcake">
       <div className="hero-content flex-col lg:flex-row-reverse">
         <img
           src={Garden1}

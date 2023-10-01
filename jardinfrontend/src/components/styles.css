@@ -1,5 +1,0 @@
-.horizontal-carousel {
-    display: flex; /* Hace que los elementos se muestren en línea (horizontalmente) */
-    overflow-x: auto; /* Permite el desplazamiento horizontal */
-    white-space: nowrap; /* Evita que los elementos se desplacen a una nueva línea */
-  }

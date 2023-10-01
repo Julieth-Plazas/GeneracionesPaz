@@ -2,7 +2,7 @@ import React from 'react'
 
 const Spaces = () => {
   return (
-    <div>Spaces</div>
+    <div className='bg-base-100 shadow-inner border-t'>Spaces</div>
   )
 }
 
