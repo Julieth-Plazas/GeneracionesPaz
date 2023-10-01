@@ -16,7 +16,8 @@ import PrivateRouteTeacher from "./components/PrivateRouteTeacher";
 import Teachers from "./pages/AdminPages/Teachers";
 import AdminGallery from "./pages/AdminPages/Gallery";
 import Games from "./pages/TeacherPages/Games";
-import Regist from "./pages/AdminPages/Regist";
+import RegistUser from "./pages/AdminPages/RegistUser";
+import CreateGalleries from './pages/AdminPages/CreateGalleries'
 import {
   HOME,
   ADMISSIONS,
@@ -34,6 +35,7 @@ import {
   GALLERY_ADMIN,
   TEACHER_GAMES,
   TEACHER_REGIST,
+  CREATE_GALLERIES
 } from "./routes/PrivatePaths";
 import Footer from "./components/Footer";
 import AdminProvider from "./context/AdminContext";
@@ -85,7 +87,15 @@ function App() {
                 path={TEACHER_REGIST}
                 element={
                   <PrivateRouteAdmin>
-                    <Regist />
+                    <RegistUser />
+                  </PrivateRouteAdmin>
+                }
+              />
+              <Route
+                path={CREATE_GALLERIES}
+                element={
+                  <PrivateRouteAdmin>
+                    <CreateGalleries />
                   </PrivateRouteAdmin>
                 }
               />

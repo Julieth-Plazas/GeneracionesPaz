@@ -107,7 +107,7 @@ const Navbar = () => {
                   </ul>
                 </li>
                 <li>
-                  <Link to="/galeria">
+                  <Link to="/ver-galerias">
                     <img src={Gallery} alt="icon" width={30} />
                     Galeria
                   </Link>
@@ -155,7 +155,7 @@ const Navbar = () => {
                   </ul>
                 </li>
                 <li>
-                  <Link to="/galeria">
+                  <Link to="/ver-galerias">
                     <img src={Gallery} alt="icon" width={30} />
                     Galeria
                   </Link>
@@ -197,13 +197,13 @@ const Navbar = () => {
                   </summary>
                   <ul className="p-2">
                     <li>
-                      <Link to="/nosotros">
+                      <Link to="/ver-galerias">
                         <img src={Book} alt="icon" width={20} />
                         Ver galerias
                       </Link>
                     </li>
                     <li>
-                      <Link to="/espacios">
+                      <Link to="/admin/crear-galeria">
                         <img src={Bricks} alt="icon" width={20} />
                         Crear galeria
                       </Link>
@@ -272,7 +272,7 @@ const Navbar = () => {
                 </details>
               </li>
               <li>
-                <Link to="/galeria">
+                <Link to="/ver-galerias">
                   <img src={Gallery} alt="icon" width={40} />
                   Galeria
                 </Link>
@@ -322,7 +322,7 @@ const Navbar = () => {
                 </details>
               </li>
               <li>
-                <Link to="/galeria">
+                <Link to="/ver-galerias">
                   <img src={Gallery} alt="icon" width={40} />
                   Galeria
                 </Link>
@@ -351,7 +351,7 @@ const Navbar = () => {
                       </Link>
                     </li>
                     <li>
-                      <Link to="/admin/registrar">
+                      <Link to="/admin/registrar-docentes">
                         <img src={Metodology} alt="icon" width={20} />
                         Registrar docentes
                       </Link>
@@ -367,7 +367,7 @@ const Navbar = () => {
                   </summary>
                   <ul className="p-2">
                     <li>
-                      <Link to="/admin/gallery">
+                      <Link to="/ver-galerias">
                         <img src={Book} alt="icon" width={20} />
                         Ver galerias
                       </Link>
