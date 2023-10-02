@@ -182,7 +182,7 @@ function MemoramaAnimales() {
         padding: 0,
         margin: 0,
         perspective: "1000px",
-        background: "powderblue",
+        background: "none",
         minHeight: "100vh",
         display: "flex",
         flexDirection: "column",

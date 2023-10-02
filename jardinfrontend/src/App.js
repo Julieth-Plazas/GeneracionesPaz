@@ -114,7 +114,7 @@ function App() {
                 }
               />
             </Routes>
-            <Footer />
+           
           </BrowserRouter>
         </UserProvider>
       </AdminProvider>

@@ -1,19 +1,19 @@
 import React, { useState, useEffect } from 'react';
 
-import AppleImage from '../assets/Img_English/manzana.jpg';
-import CatImage from '../assets/Img_English/gato.png';
-import BananaImage from '../assets/Img_English/banana.jpg';
-import PearImage from '../assets/Img_English/pera.jpg';
-import DogImage from '../assets/Img_English/perro.png';
-import BearImage from '../assets/Img_English/oso.jpg';
-import LionImage from '../assets/Img_English/leon.jpg';
-import OrangeImage from '../assets/Img_English/naranja.jpg';
-import PigImage from '../assets/Img_English/cerdo.jpg';
+import AppleImage from '../../assets/Img_English/manzana.jpg';
+import CatImage from '../../assets/Img_English/gato.png';
+import BananaImage from '../../assets/Img_English/banana.jpg';
+import PearImage from '../../assets/Img_English/pera.jpg';
+import DogImage from '../../assets/Img_English/perro.png';
+import BearImage from '../../assets/Img_English/oso.jpg';
+import LionImage from '../../assets/Img_English/leon.jpg';
+import OrangeImage from '../../assets/Img_English/naranja.jpg';
+import PigImage from '../../assets/Img_English/cerdo.jpg';
 
 // Importar los archivos de sonido ...
-import correctSound from '../assets/sonidos/donkey-kong-coin.mp3';
-import gameOverSound from '../assets/sonidos/pacman-dies.mp3';
-import incorrectSound from '../assets/sonidos/megaman-x-error.mp3';
+import correctSound from '../../assets/sonidos/donkey-kong-coin.mp3';
+import gameOverSound from '../../assets/sonidos/pacman-dies.mp3';
+import incorrectSound from '../../assets/sonidos/megaman-x-error.mp3';
 
 
 function GameEnglish1() {
