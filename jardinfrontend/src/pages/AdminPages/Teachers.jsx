@@ -9,14 +9,14 @@ const Teachers = () => {
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    async function fetchAppointments() {
+    async function fetchUsers() {
       setLoading(true);
       const response = await fetch("http://localhost:4000/api/user");
       const data = await response.json();
       setLoading(false);
       setTeachers(data.slice(10 * (page - 1), 10 * page));
     }
-    fetchAppointments();
+    fetchUsers();
   }, [page]);
 
   return (

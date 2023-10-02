@@ -50,14 +50,14 @@ function Carousel({ type, images, id }) {
           </div>
           <div className="carousel-item">
             <img
-              src={Garden4}
+              src={Garden1}
               className="rounded-box w-auto h-auto object-contain"
               alt="Imagen 1"
             />
           </div>
           <div className="carousel-item">
             <img
-              src={Garden4}
+              src={Garden2}
               className="rounded-box w-auto h-auto object-contain"
               alt="Imagen 1"
             />

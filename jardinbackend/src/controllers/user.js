@@ -27,14 +27,11 @@ userCtrl.login = async (req, res) => {
     if (user.length > 0) {
       const validation = await bcrypt.compare(data.userPassword, user[0].password)
       if (validation) {
-        console.log("heredddddd");
         res.json({ message: "Session", user: user });
       } else {
-        console.log("asfasd");
         res.json({ message: "Contraseña incorrecta" });
       }
     } else {
-      console.log("asfdasd");
       res.json({ message: "Usuario no registrado" });
     }
   } catch (error) {

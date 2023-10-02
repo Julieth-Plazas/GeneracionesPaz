@@ -6,12 +6,13 @@ import Gallery from "../assets/blackboard.png";
 import Contact from "../assets/paper-plane.png";
 import KnowUs from "../assets/boy.png";
 import Metodology from "../assets/puzzle.png";
-import Services from "../assets/bricks.png";
-import Spaces from "../assets/seesaw.png";
 import Toys from "../assets/toys.png";
 import Backpack from "../assets/backpack.png";
-import Bricks from '../assets/bricks.png'
-import Book from '../assets/book.png'
+import Bricks from "../assets/bricks.png";
+import Book from "../assets/book.png";
+import Table from "../assets/table.png";
+import Blocks from "../assets/blocks.png";
+import Crayons from "../assets/crayons.png";
 import { Link, useNavigate } from "react-router-dom";
 import { AdminContext } from "../context/AdminContext";
 import { TeacherContext } from "../context/TeacherContext";
@@ -174,6 +175,26 @@ const Navbar = () => {
                 </li>
                 <li>
                   <summary>
+                    <img src={Table} alt="icon" width={30} />
+                    Publicaciones
+                  </summary>
+                  <ul className="p-2">
+                    <li>
+                      <Link to="/admin/ver-posts">
+                        <img src={Blocks} alt="icon" width={20} />
+                        Ver publicaciones
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/admin/crear-galeria">
+                        <img src={Crayons} alt="icon" width={20} />
+                        Crear publicacion
+                      </Link>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <summary>
                     <img src={Gallery} alt="icon" width={30} />
                     Galeria
                   </summary>
@@ -318,6 +339,28 @@ const Navbar = () => {
                       <Link to="/admin/registrar-docentes">
                         <img src={Metodology} alt="icon" width={20} />
                         Registrar docentes
+                      </Link>
+                    </li>
+                  </ul>
+                </details>
+              </li>
+              <li tabIndex={0}>
+                <details>
+                  <summary>
+                    <img src={Table} alt="icon" width={40} />
+                    Publicaciones
+                  </summary>
+                  <ul className="p-2">
+                    <li>
+                      <Link to="/admin/ver-posts">
+                        <img src={Blocks} alt="icon" width={20} />
+                        Ver publicaciones
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/admin/crear-post">
+                        <img src={Crayons} alt="icon" width={20} />
+                        Crear publicacion
                       </Link>
                     </li>
                   </ul>

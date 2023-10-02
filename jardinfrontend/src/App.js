@@ -29,13 +29,17 @@ import {
   TEACHERS_ADMIN,
   TEACHER_GAMES,
   ADMIN_GALLERIES,
+  ADMIN_POSTS,
   TEACHER_REGIST,
   CREATE_GALLERIES,
+  CREATE_POST
 } from "./routes/PrivatePaths";
 import Footer from "./components/Footer";
 import AdminProvider from "./context/AdminContext";
 import UserProvider from "./context/TeacherContext";
 import AdminGalleries from "./pages/AdminPages/AdminGalleries";
+import AdminPosts from "./pages/AdminPages/AdminPosts";
+import CreatePosts from "./pages/AdminPages/CreatePosts";
 
 function App() {
   return (
@@ -90,6 +94,22 @@ function App() {
                 element={
                   <PrivateRouteAdmin>
                     <CreateGalleries />
+                  </PrivateRouteAdmin>
+                }
+              />
+              <Route
+                path={ADMIN_POSTS}
+                element={
+                  <PrivateRouteAdmin>
+                    <AdminPosts />
+                  </PrivateRouteAdmin>
+                }
+              />
+              <Route
+                path={CREATE_POST}
+                element={
+                  <PrivateRouteAdmin>
+                    <CreatePosts />
                   </PrivateRouteAdmin>
                 }
               />
