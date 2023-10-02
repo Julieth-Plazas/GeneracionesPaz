@@ -202,7 +202,7 @@ const Regist = () => {
         <div className="divider lg:divider-horizontal"></div>
         <img
           src={Computer}
-          className="max-w-sm md:max-w-sm rounded-lg shadow-2xl w-full bg-transparent"
+          className="max-w-sm md:max-w-sm rounded-lg shadow-2xl w-full bg-transparent p-5"
           alt="docente"
         />
       </div>

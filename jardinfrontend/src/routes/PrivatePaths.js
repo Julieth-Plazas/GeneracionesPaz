@@ -1,5 +1,5 @@
 export const TEACHERS_ADMIN = "/admin/docentes"
-export const GALLERY_ADMIN = "/admin/galeria"
 export const TEACHER_GAMES = "/docente/juegos"
+export const ADMIN_GALLERIES = "/admin/ver-galerias"
 export const TEACHER_REGIST = "/admin/registrar-docentes"
 export const CREATE_GALLERIES = "/admin/crear-galeria"

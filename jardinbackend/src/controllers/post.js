@@ -44,4 +44,4 @@ postCrtl.deletePost = async (req, res) => {
   }
 };
 
-module.exports = galleryCrtl;
+module.exports = postCrtl;

@@ -142,7 +142,7 @@ const Contact = () => {
                   name="mensaje"
                   className="input input-bordered h-28 p-2"
                   style={{ resize: "none" }}
-                  {...register("age", {
+                  {...register("mensaje", {
                     required: true,
                   })}
                 />

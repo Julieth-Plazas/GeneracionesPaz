@@ -1,9 +1,100 @@
-import React from 'react'
+import React, { useEffect, useState } from "react";
+import Carousel from "../../components/Carousel";
 
 const Gallery = () => {
-  return (
-    <div className='bg-base-100 shadow-inner border-t'>Gallerys</div>
-  )
-}
+  const [galleries, setGalleries] = useState([]);
+  const [page, setPage] = useState(1);
 
-export default Gallery
+  useEffect(() => {
+    async function galleries() {
+      const response = await fetch("http://localhost:4000/api/gallery");
+      const data = await response.json();
+      setGalleries(data);
+    }
+    galleries();
+  }, []);
+
+  return (
+    <div
+      className="hero min-h-screen bg-base-100 border-t shadow-inner"
+      data-theme="cupcake"
+    >
+      <div className="hero-content text-center">
+        {galleries.slice(page * 6 - 6, page * 6).length > 0 ? (
+          <div className="grid grid-cols-1 content-center gap-10 md:grid-cols-2 lg:grid-cols-3 p-5">
+            {galleries.slice(page * 6 - 6, page * 6).map((gallery, index) => (
+              <div
+                key={index}
+                className="bg-white p-5 shadow-lg rounded-lg overflow-hidden"
+              >
+                <Carousel key={index} type="gallery" images={gallery.images} />
+                <div className="p-4">
+                  <h2 className="text-xl font-semibold mb-2">
+                    {gallery.title}
+                  </h2>
+                  <p className="text-gray-600">{gallery.description}</p>
+                </div>
+              </div>
+            ))}
+            <div className="col-span-3 justify-center content-center p-5">
+              <div className="join" data-theme="corporate">
+                <button
+                  className="join-item btn"
+                  onClick={() => {
+                    page > 1 && setPage(page - 1);
+                  }}
+                >
+                  «
+                </button>
+                <button className="join-item btn">Página {page}</button>
+                <button
+                  className="join-item btn"
+                  onClick={() => {
+                    galleries.slice(page * 6 - 6, page * 6).length > 0 &&
+                      setPage(page + 1);
+                  }}
+                >
+                  »
+                </button>
+              </div>
+            </div>
+          </div>
+        ) : (
+          <div className="hero min-h-screen">
+            <div className="hero-content text-center flex-col">
+              <div className="max-w-md">
+                <h1 className="text-3xl font-bold py-10">
+                  No hay galerias para ver
+                </h1>
+              </div>
+              <div className="flex justify-center content-center p-5">
+                <div className="join" data-theme="corporate">
+                  <button
+                    className="join-item btn"
+                    onClick={() => {
+                      page > 1 && setPage(page - 1);
+                    }}
+                  >
+                    «
+                  </button>
+                  <button className="join-item btn">Página {page}</button>
+                  <button
+                    className="join-item btn"
+                    onClick={() => {
+                      galleries.slice(page * 6 - 6, page * 6).length > 0 &&
+                        setPage(page + 1);
+                    }}
+                  >
+                    »
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+      </div>
+    </div>
+  );
+};
+
+export default Gallery;

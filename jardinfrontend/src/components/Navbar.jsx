@@ -92,18 +92,6 @@ const Navbar = () => {
                         Metodología
                       </Link>
                     </li>
-                    <li>
-                      <Link to="/servicios">
-                        <img src={Services} alt="icon" width={20} />
-                        Servicios
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="/espacios">
-                        <img src={Spaces} alt="icon" width={20} />
-                        Espacios
-                      </Link>
-                    </li>
                   </ul>
                 </li>
                 <li>
@@ -144,12 +132,6 @@ const Navbar = () => {
                       <Link to="/nosotros">
                         <img src={KnowUs} alt="icon" width={20} />
                         Conocenos
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="/espacios">
-                        <img src={Spaces} alt="icon" width={20} />
-                        Espacios
                       </Link>
                     </li>
                   </ul>
@@ -197,7 +179,7 @@ const Navbar = () => {
                   </summary>
                   <ul className="p-2">
                     <li>
-                      <Link to="/ver-galerias">
+                      <Link to="/admin/ver-galerias">
                         <img src={Book} alt="icon" width={20} />
                         Ver galerias
                       </Link>
@@ -256,18 +238,6 @@ const Navbar = () => {
                         Metodología
                       </Link>
                     </li>
-                    <li>
-                      <Link to="/servicios">
-                        <img src={Services} alt="icon" width={20} />
-                        Servicios
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="/espacios">
-                        <img src={Spaces} alt="icon" width={20} />
-                        Espacios
-                      </Link>
-                    </li>
                   </ul>
                 </details>
               </li>
@@ -310,12 +280,6 @@ const Navbar = () => {
                       <Link to="/nosotros">
                         <img src={KnowUs} alt="icon" width={20} />
                         Conocenos
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="/espacios">
-                        <img src={Spaces} alt="icon" width={20} />
-                        Espacios
                       </Link>
                     </li>
                   </ul>
@@ -367,7 +331,7 @@ const Navbar = () => {
                   </summary>
                   <ul className="p-2">
                     <li>
-                      <Link to="/ver-galerias">
+                      <Link to="/admin/ver-galerias">
                         <img src={Book} alt="icon" width={20} />
                         Ver galerias
                       </Link>

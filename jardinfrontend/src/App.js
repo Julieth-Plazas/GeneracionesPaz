@@ -5,8 +5,6 @@ import Home from "./pages/UserPages/Home";
 import Admissions from "./pages/UserPages/Admissions";
 import About from "./pages/UserPages/About";
 import Metodology from "./pages/UserPages/Metodology";
-import Services from "./pages/UserPages/Services";
-import Spaces from "./pages/UserPages/Spaces";
 import Gallery from "./pages/UserPages/Gallery";
 import Contact from "./pages/UserPages/Contact";
 import Login from "./pages/UserPages/Login";
@@ -14,16 +12,13 @@ import NotFound from "./pages/UserPages/NotFound";
 import PrivateRouteAdmin from "./components/PrivateRouteAdmin";
 import PrivateRouteTeacher from "./components/PrivateRouteTeacher";
 import Teachers from "./pages/AdminPages/Teachers";
-import AdminGallery from "./pages/AdminPages/Gallery";
 import Games from "./pages/TeacherPages/Games";
 import RegistUser from "./pages/AdminPages/RegistUser";
-import CreateGalleries from './pages/AdminPages/CreateGalleries'
+import CreateGalleries from "./pages/AdminPages/CreateGalleries";
 import {
   HOME,
   ADMISSIONS,
   ABOUT,
-  SERVICES,
-  SPACES,
   GALLERY,
   LOGIN,
   NOTFOUND,
@@ -32,14 +27,15 @@ import {
 } from "./routes/PublicPaths";
 import {
   TEACHERS_ADMIN,
-  GALLERY_ADMIN,
   TEACHER_GAMES,
+  ADMIN_GALLERIES,
   TEACHER_REGIST,
-  CREATE_GALLERIES
+  CREATE_GALLERIES,
 } from "./routes/PrivatePaths";
 import Footer from "./components/Footer";
 import AdminProvider from "./context/AdminContext";
 import UserProvider from "./context/TeacherContext";
+import AdminGalleries from "./pages/AdminPages/AdminGalleries";
 
 function App() {
   return (
@@ -53,8 +49,6 @@ function App() {
               <Route path={ADMISSIONS} element={<Admissions />} />
               <Route path={METODOLOGY} element={<Metodology />} />
               <Route path={ABOUT} element={<About />} />
-              <Route path={SERVICES} element={<Services />} />
-              <Route path={SPACES} element={<Spaces />} />
               <Route path={GALLERY} element={<Gallery />} />
               <Route path={CONTACT} element={<Contact />} />
               <Route path={LOGIN} element={<Login />} />
@@ -64,14 +58,6 @@ function App() {
                 element={
                   <PrivateRouteAdmin>
                     <Teachers />
-                  </PrivateRouteAdmin>
-                }
-              />
-              <Route
-                path={GALLERY_ADMIN}
-                element={
-                  <PrivateRouteAdmin>
-                    <AdminGallery />
                   </PrivateRouteAdmin>
                 }
               />
@@ -88,6 +74,14 @@ function App() {
                 element={
                   <PrivateRouteAdmin>
                     <RegistUser />
+                  </PrivateRouteAdmin>
+                }
+              />
+              <Route
+                path={ADMIN_GALLERIES}
+                element={
+                  <PrivateRouteAdmin>
+                    <AdminGalleries />
                   </PrivateRouteAdmin>
                 }
               />

@@ -10,8 +10,7 @@ app.use(cors())
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use("/api/user", require("./routes/user"));
-//app.use("/api/post", require("./routes/post"));
-//app.use("/api/gallery", require("./routes/gallery"));
-//app.use("/api/image", require("./routes/images"));
+app.use("/api/post", require("./routes/post"));
+app.use("/api/gallery", require("./routes/gallery"));
 
 module.exports = app;

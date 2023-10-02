@@ -27,7 +27,7 @@ const Table = ({ data, type }) => {
   }
 
   return (
-    <div className="w-full" data-theme="cupcake">
+    <div className="w-full bg-base-100 border-t shadow-inner" data-theme="cupcake">
       <div className="overflow-x-auto p-10">
         <table className="table table-zebra">
           <thead>
@@ -53,14 +53,14 @@ const Table = ({ data, type }) => {
                   <td>
                     <Link
                       className="btn btn-sm btn-ghost tooltip normal-case"
-                      data-tip="Edit"
+                      data-tip="Editar docente"
                       onClick={() => assignData(teacher._id)}
                     >
                       <img src={EditTeacher} alt="icon" width={30} />
                     </Link>
                     <Link
                       className="btn btn-sm btn-ghost tooltip normal-case"
-                      data-tip="Delete"
+                      data-tip="Borrar docente"
                       onClick={() => assignId(teacher._id)}
                     >
                       <img src={DeleteTeacher} alt="icon" width={30} />
