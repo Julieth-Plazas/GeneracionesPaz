@@ -1,5 +1,5 @@
 import React from "react";
-import inscripcion from "../../assets/Matriculas.jpg";
+import inscripcion from "../../assets/Masr.png";
 
 const Admissions = () => {
   return (
@@ -11,12 +11,12 @@ const Admissions = () => {
               src={inscripcion}
               alt="Matriculas"
               loading="lazy"
-              className="border rounded-2xl w-2/3 mx-auto"
+              className="border rounded-2xl w-1/3 mx-auto"
             />
           </div>
         </div>
-        <div className="grid grid-rows-1 gap-4 p-10 md:grid-rows-2 md:grid-flow-col">
-          <div className="row-span-1 border rounded-2xl p-5 border-black justify-center align-middle md:row-span-2 shadow-lg">
+        <div className="grid gap-4 p-10 md:grid-rows-2 md:grid-flow-col">
+          <div className="  text-xls leading-5 hover:bg-green-50 row-span-1 border rounded-2xl p-5 border-grey justify-center align-middle md:row-span-2 shadow-lg">
             <h3
               className="text-3xl font-semibold leading-relaxed text-gray-900 text-center"
               style={{ color: "green" }}
@@ -39,7 +39,7 @@ const Admissions = () => {
               <li>1 carpeta oficio para archivar con gancho</li>
             </ul>
           </div>
-          <div className="row-span-1 border rounded-2xl p-5 border-black shadow-lg">
+          <div className="text-xls leading-5 hover:bg-green-50 row-span-1 border rounded-2xl p-5 border-grey   shadow-lg">
             <h3
               className="text-3xl font-semibold leading-relaxed text-gray-900 text-center"
               style={{ color: "green" }}
@@ -56,7 +56,7 @@ const Admissions = () => {
               <li>CUARTO PERIODO: 11 de Septiembre - 17 de Noviembre</li>
             </ul>
           </div>
-          <div className="row-span-1 border rounded-2xl p-5 border-black shadow-lg">
+          <div className=" text-xls leading-5 hover:bg-green-50 row-span-1 border rounded-2xl p-5 border-grey shadow-lg">
             <h3
               className="text-3xl font-semibold leading-relaxed text-gray-900 text-center"
               style={{ color: "green" }}
